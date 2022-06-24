@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Application</title>
+  </head>
+  <body>
+    <script>
+
+      alert("Input 1 for Addition, 2 for Subtraction, 3 for Multiplication, 4 for Division, 5 for Modulus")
+
+      let choice = parseInt(prompt("Kindly input a value that matches the operation you are trying to perform from 1-5: "));
+      let firstNum = prompt("Please input first number");
+      let secondNum = prompt("Please input second number");
+      let num1 = parseInt(firstNum);
+      let num2 = parseInt(secondNum);
+
+
+
+      if (choice == 1) {
+        let sum = num1 + num2;
+        alert(sum);
+      } else if (choice == 2) {
+        let subtraction = num1 - num2;
+        alert(subtraction);
+      } else if (choice == 3) {
+        let multiplication = num1 * num2;
+        alert(multiplication);
+      } else if (choice == 4) {
+        let division = num1 / num2;
+        alert(division);
+      } else if (choice == 5) {
+        let modulus = num1 % num2;
+        alert(modulus);
+      } else {
+        alert(
+          "The value you entered is incorrect, kindly enter a valid number from 1-5"
+        );
+      }
+    </script>
+  </body>
+</html>
